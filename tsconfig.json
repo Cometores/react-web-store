@@ -10,7 +10,8 @@
 		"paths": {
 			"*":[ "./src/*"]
 		},
-		"allowSyntheticDefaultImports": true
+		"allowSyntheticDefaultImports": true,
+        "plugins": [{"name": "typescript-plugin-css-moddules"}]
     },
     "include": [
         "./src/**/*"
