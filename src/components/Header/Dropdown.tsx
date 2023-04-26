@@ -7,8 +7,8 @@ const Dropdown = ({item, className = ''}) => {
 		{
 			!!(item?.list?.length) && (
 				<ul className={`${styles.Dropdown} ${className}`}>
-					{item?.list.map(subitem => {
-						return (<li className={styles.Subitem}>
+					{item?.list.map((subitem, index) => {
+						return (<li className={styles.Subitem} key={index}>
 							<a href={subitem.link}>{subitem.text}</a>
 						</li>)
 					})}
