@@ -4,15 +4,20 @@
 	display: inline-block;
 } */
 
+.ZoomWrapper {
+	overflow: hidden;
+	border-radius: 10px;
+}
+
 .Zoom {
 	transition: transform .2s;
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-	border-radius: 10px;
+	object-fit: cover;
 }
 
 .Zoom:hover {
-	transform: scale(1.5);
+	transform: scale(1.05);
 	/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

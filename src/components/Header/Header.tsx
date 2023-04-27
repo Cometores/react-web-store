@@ -1,8 +1,8 @@
 import React from "react";
-import { Item } from "../../utils/types";
-import Dropdown from "./Dropdown";
+import { Item } from "../../utils/types.ts";
+import Dropdown from "./Dropdown.tsx";
 import styles from "./Header.module.css";
-import DownArrow from "../UI/DownArrow/DownArrow";
+import DownArrow from "../UI/DownArrow/DownArrow.tsx";
 
 interface HeaderProps {
 	items: Item[]

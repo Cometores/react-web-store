@@ -1,5 +1,5 @@
 import React from 'react';
-import Star from './Star';
+import Star from './Star.jsx';
 
 const Raiting = ({ num }) => {
 
@@ -13,7 +13,7 @@ const Raiting = ({ num }) => {
 			}
 			{
 				[...Array(5-num).keys()].map(i => {
-					return <Star color="grey"/>
+					return <Star color="none"/>
 				})
 			}
 		</div>

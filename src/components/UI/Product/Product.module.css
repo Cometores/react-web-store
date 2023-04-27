@@ -1,0 +1,63 @@
+.ProductCard {
+	width: 200px;
+	height: 300px;
+	background-color: white;
+}
+
+.ImageWrapper {
+	position: relative;
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.Image {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	max-width: 200px;
+	max-height: 200px;
+	object-fit: cover;
+	opacity: 1;
+	transition: opacity 0.2s;
+}
+
+.ImageSecondary {
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 200px;
+	max-height: 200px;
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+
+.ImageWrapper:hover .Image {
+	opacity: 0;
+}
+
+.ImageWrapper:hover .ImageSecondary {
+	opacity: 1;
+}
+
+
+.ProductSummary {
+	display: flex;
+	flex-direction: column;
+}
+
+.ProductPrice {
+	color: gray;
+}
+
+.ProductDescription {
+	color: black;
+}
+
+.ProductRaiting {
+	max-height: 30px;
+}

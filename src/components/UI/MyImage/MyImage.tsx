@@ -3,7 +3,7 @@ import styles from "./MyImage.module.css";
 
 const MyImage = ({scr, width, className}) => {
 	return (
-		<div className={className}>
+		<div className={`${styles.ZoomWrapper} ${className}`}>
 			<img 
 				src={scr} 
 				alt="Gavno" 

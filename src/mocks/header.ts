@@ -1,4 +1,4 @@
-import { Item } from "../utils/types";
+import { Item } from "../utils/types.ts";
 
 export const header: Item[] = [
 	{
