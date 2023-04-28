@@ -14,7 +14,7 @@ const Slider = ({ slides }) => {
 				slidesPerView={1}
 				loop
 				modules={[Navigation, Pagination, A11y, Autoplay]}
-				autoplay={{ delay:5000 }}
+				autoplay={{ delay:5000, disableOnInteraction: false }}
 				navigation
 				pagination={{ clickable: true }}
 			>
