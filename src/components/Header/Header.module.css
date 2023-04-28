@@ -1,31 +1,82 @@
-.Header {
+.header {
+	background: black;
+
+	/* Content alignment */
 	display: flex;	
 	justify-content: center;
-	background: black;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	z-index: 1;
+	position: relative;
+	height: 60px;
+
+	/* Fonts */
+	font-family: Poppins, sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.0em;
+    font-style: normal;
 }
 
-.Item {
-	min-width: 70px;
+.header__wrapper {
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__item {
+	padding: 0 10px;
 	min-height: 40px;
 	display: flex;
 	align-items: center;
 	position: relative;
 }
 
-.Link {
+.header__icon {
+	transition: transform 0.2s;
+	margin-top: 4px;
+    margin-left: 2px;
+}
+
+.header__icon path {
+	padding: 0 5px;
+	fill: white;
+}
+
+.header__search {
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+.header__item:hover .header__search {
+	transform: scale(1.3);
+	color: rgb(206, 206, 206);
+}
+
+.header__link {
 	color: whitesmoke;
 	width: 100%;
 }
 
-.Dropdown {
+.header__dropdown {
 	display: none;
 }
 
-.Item:hover .Dropdown {
+.header__item:hover .header__dropdown {
 	display: flex;
 }
 
-.Item:hover .Link {
+.header__item:hover .header__icon {
+	transform: rotate(-180deg);
+}
+
+.header__item:hover .header__icon path {
+	fill: rgb(206, 206, 206);
+}
+
+.header__item:hover .header__link {
 	color: rgb(206, 206, 206);
+}
+
+.header__menu {
+	display: flex;
 }

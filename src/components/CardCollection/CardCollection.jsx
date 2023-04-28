@@ -4,12 +4,17 @@ import styles from './CardCollection.module.css'
 
 const CardCollection = () => {
 	return (
-		<div className={styles.CardCollection}>
+		<div className={styles.cardCollection}>
+		<div className={styles.cardCollection__wrapper}>
 			<Product/>
 			<Product/>
 			<Product/>
 			<Product/>
 			<Product/>
+			<Product/>
+			<Product/>
+			<Product/>
+		</div>
 		</div>
 	);
 };

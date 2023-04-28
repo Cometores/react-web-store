@@ -1,7 +1,7 @@
 .Dropdown {
 	display: flex;
 	align-items: flex-start;
-	width: 100px;
+	width: 120px;
 	flex-direction: column;
 	position: absolute;
 	padding: 10px;
@@ -9,4 +9,12 @@
 	color: white;
 	top: 40px;
 	left: 0;
+}
+
+.dropdown__item {
+	padding: 10px 0 0 0;
+}
+
+.dropdown__item:hover {
+	color: rgb(206, 206, 206);
 }

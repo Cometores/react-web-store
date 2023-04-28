@@ -1,24 +1,42 @@
-import React from "react";
-import { Item } from "../../utils/types.ts";
+import React, { useState } from "react";
+
 import Dropdown from "./Dropdown.tsx";
+import {ReactComponent as DownArrowIcon} from '../../img/arrow.svg';
+import Modal from '../Modal/Modal.jsx'
+
 import styles from "./Header.module.css";
-import DownArrow from "../UI/DownArrow/DownArrow.tsx";
+import { ReactComponent as SearchIcon } from '../../img/search.svg';
+import { Item } from "../../utils/types.ts";
 
 interface HeaderProps {
 	items: Item[]
 }
 export const Header: React.FC<HeaderProps> = ({ items }) => {
-	return (<div className={styles.Header}>
-		{items.map((item, index) => {
-			return (
-				<div className={styles.Item} key={`menu-item-${index}`}>
-					<a className={styles.Link} href={item.link}>{item.text}</a>
-					{ item.list && <DownArrow/> }
-					<Dropdown className={styles.Dropdown} item={item} />
-				</div>
-			);
-		})}
-	</div>)
+
+	const [modalActive, setModalActive] = useState(false)
+
+	return (
+	<div className={styles.header}>
+		<div  className={styles.header__wrapper}>
+			<div>LOGO</div>
+			<div className={styles.header__menu}>
+				{items.map((item, index) => {
+					return (
+						<div className={styles.header__item} key={`menu-item-${index}`}>
+							<a className={styles.header__link} href={item.link}>{item.text}</a>
+							{ item.list && <DownArrowIcon className={styles.header__icon} /> }
+							<Dropdown className={styles.header__dropdown} item={item} />
+						</div>
+					);
+				})}
+			</div>
+			<div className={styles.header__item} onClick={() => setModalActive(true)}>
+				<SearchIcon className={styles.header__search}width="20" heigth="20" fill="white"/>
+			</div>
+		</div>
+		<Modal active={modalActive} setActive={setModalActive}>Search</Modal>
+	</div>
+	)
 };
 
 export default Header;

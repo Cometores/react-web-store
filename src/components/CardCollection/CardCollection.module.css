@@ -1,9 +1,13 @@
-.CardCollection {
-	padding: 20px;
-	display: flex;
+.cardCollection {
+    width: 100%;
     background: lightgrey;
+}
+
+.cardCollection__wrapper {
+	padding: 20px 0;
+	display: flex;
     column-gap: 20px;
     max-width: 1400px;
     margin: 30px auto 0 auto;
-    justify-content: center;
+    overflow-x: scroll;
 }
