@@ -18,7 +18,10 @@ export const Header: React.FC<HeaderProps> = ({ items }) => {
 	return (
 	<div className={styles.header}>
 		<div  className={styles.header__wrapper}>
-			<div>LOGO</div>
+			<div className={styles.header__item}>
+				<img src="https://cdn.shopify.com/s/files/1/1265/2145/files/GS_GamerSupps_wh.png?v=1669504460&width=1726" alt="Logo" />
+			</div>
+
 			<div className={styles.header__menu}>
 				{items.map((item, index) => {
 					return (
@@ -30,6 +33,7 @@ export const Header: React.FC<HeaderProps> = ({ items }) => {
 					);
 				})}
 			</div>
+
 			<div className={styles.header__item} onClick={() => setModalActive(true)}>
 				<SearchIcon className={styles.header__search}width="20" heigth="20" fill="white"/>
 			</div>

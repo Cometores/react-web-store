@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from "./MyImage.module.css";
+import styles from "./GalleryImage.module.css";
 
-const MyImage = ({scr, width, className}) => {
+const GalleryImage = ({scr, width, className}) => {
 	return (
 		<div className={`${styles.ZoomWrapper} ${className}`}>
 			<img 
@@ -14,4 +14,4 @@ const MyImage = ({scr, width, className}) => {
 	);
 };
 
-export default MyImage;
+export default GalleryImage;
