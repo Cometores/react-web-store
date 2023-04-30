@@ -14,13 +14,13 @@ const Footer: React.FC<HeaderProps> = ({ items }) => {
 					<p className={styles.footer__title}>
 						WHO WE ARE
 					</p>
-					<p>
+					<p className={styles.header__item}>
 						Gamer Supps is the leader in gaming energy & nutrition.
 					</p>
-					<p>
+					<p className={styles.header__item}>
 						contact@gamersupps.gg
 					</p>
-					<p>
+					<p className={styles.header__item}>
 						1-800-431-9664
 					</p>
 				</div>
@@ -43,7 +43,7 @@ const Footer: React.FC<HeaderProps> = ({ items }) => {
 					<p className={styles.footer__title}>
 						IMPORTANT NOTICE
 					</p>
-					<p>
+					<p className={styles.header__item}>
 						*These statements have not been evaluated by the Food and Drug Administration.
 						These products are not intended to diagnose, treat, cure, or prevent any disease.
 					</p>

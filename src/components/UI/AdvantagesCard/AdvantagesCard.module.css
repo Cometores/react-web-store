@@ -1,0 +1,29 @@
+.cardWrapper {
+	display: flex;
+	flex-direction: row;
+	padding: 40px 0 40px 0;
+}
+
+.cardWrapper--rtl {
+	flex-direction: row-reverse;
+}
+
+.cardWrapper__text {
+	background-color: rgb(235, 235, 235);
+	border-radius: 20px;
+	text-align: left;
+	padding: 40px 80px;
+	color:rgb(65, 65, 65);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.cardWrapper__text ul {
+	list-style: disc;
+}
+
+.cardWrapper h1 {
+	color: black;
+}
+

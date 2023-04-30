@@ -8,10 +8,22 @@
 
 .footer__wrapper {
 	max-width: 1400px;
+	margin: 0 auto;
+	padding-top: 40px;
 	color: white;
 	display: flex;
 }
 
 .footer__column {
 	width: 33%;
+	text-align: left;
+}
+
+.footer__title {
+	font-weight: 700;
+	font-family: Poppins, sans-serif;
+}
+
+.header__item {
+	color:rgb(190, 190, 190)
 }
