@@ -9,13 +9,14 @@
 .footer__wrapper {
 	max-width: 1400px;
 	margin: 0 auto;
-	padding-top: 40px;
+	padding: 60px 0;
 	color: white;
 	display: flex;
+	justify-content: space-between;
 }
 
 .footer__column {
-	width: 33%;
+	max-width: 33%;
 	text-align: left;
 }
 

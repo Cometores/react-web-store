@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import Dropdown from "./Dropdown.tsx";
 import {ReactComponent as DownArrowIcon} from '../../img/arrow.svg';
@@ -11,13 +11,37 @@ import { Item } from "../../utils/types.ts";
 interface HeaderProps {
 	items: Item[]
 }
+
+
 export const Header: React.FC<HeaderProps> = ({ items }) => {
 
 	const [modalActive, setModalActive] = useState(false)
+	const menuRef = useRef<HTMLInputElement>(null);
+
+	// useEffect(() => {
+	// 	console.dir(menuRef.current);
+		
+	// 	function callback (e) {
+	// 		console.dir(menuRef.current);
+	// 		console.log(e.target);
+			
+	// 		if (e.target !== document.querySelector(".header") && e.target.contains(document.querySelector(".header")) && menuRef.current && menuRef.current.checked === true){
+	
+	// 			menuRef.current.checked = false;
+	// 		}
+	// 	}
+	// 	window.addEventListener('click', callback);
+
+	// 	return () => {
+	// 		window.removeEventListener('click', callback);
+	// 	}
+	// }, [])
 
 	return (
 	<div className={styles.header}>
 		<div  className={styles.header__wrapper}>
+			<input className={styles.header__mobileIconInput} id="mobile-menu" type="checkbox" ref={menuRef} />
+			<label className={styles.header__mobileIcon} htmlFor="mobile-menu">MENU</label>
 			<div className={styles.header__item}>
 				<img src="https://cdn.shopify.com/s/files/1/1265/2145/files/GS_GamerSupps_wh.png?v=1669504460&width=1726" alt="Logo" />
 			</div>

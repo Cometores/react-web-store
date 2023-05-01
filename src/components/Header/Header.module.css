@@ -15,6 +15,14 @@
     font-style: normal;
 }
 
+.header__mobileIconInput {
+	display: none;
+}
+
+.header__mobileIcon {
+	display: none;
+}
+
 .header__wrapper {
 	max-width: 1400px;
 	width: 100%;
@@ -86,4 +94,32 @@
 
 .header__item:hover .header__dropdown {
 	display: flex;
+}
+
+@media (max-width: 660px) {
+	.header {
+		
+	}
+
+	.header__mobileIcon {
+		display: block;
+		color: white;
+	}
+
+	.header__menu {
+		display: none;
+	}
+
+	.header__mobileIconInput:checked ~ .header__menu {
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		z-index: 100000;
+		width: 30%;
+		top: 59px;
+		left: 0;
+	}
+
+
 }
