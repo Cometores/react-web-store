@@ -27,6 +27,10 @@
 	list-style: disc;
 }
 
+.cardWrapper__text li {
+	margin: 25px 0;
+}
+
 .cardWrapper h1 {
 	color: black;
 	margin: 0;

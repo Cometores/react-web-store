@@ -1,6 +1,13 @@
 .cardCollection {
     width: 100%;
     background: rgb(240, 240, 240);
+    margin-top: 50px;
+    padding: 10px 0 40px 0;
+}
+
+.cardCollection__wrapper {
+    max-width: 1400px;
+    margin: 50px auto 50px auto;
 }
 
 .cardCollection__title {
@@ -16,14 +23,27 @@
     font-style: normal;
 }
 
-.cardCollection__wrapper {
-    max-width: 1400px;
-    margin: 30px auto 0 auto;
-}
-
 .cardCollection__products {
 	padding: 20px 0;
 	display: flex;
     column-gap: 20px;
     overflow-x: scroll;
+}
+
+/* Scrollbar styles */
+.cardCollection__products::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.cardCollection__products::-webkit-scrollbar {
+    height: 8px;
+    background-color: #F5F5F5;
+}
+
+.cardCollection__products::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
 }

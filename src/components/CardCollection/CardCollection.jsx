@@ -7,7 +7,7 @@ const CardCollection = () => {
 		<div className={styles.cardCollection}>
 			<div className={styles.cardCollection__wrapper}>
 				<div className={styles.cardCollection__title}>
-					Featured Products
+					<h1>Featured Products</h1>
 				</div>
 				<div className={styles.cardCollection__products}>
 					<Product />
