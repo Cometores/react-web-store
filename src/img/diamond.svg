@@ -1,0 +1,4 @@
+<svg role="presentation" fill="none" focusable="false" stroke-width="2" width="32" height="32" class="hidden sm:block icon icon-picto-jewelry" viewBox="0 0 24 24">
+    <path d="M5.157 3.74C3.83 4.835 2.009 7.19 1.286 9.43c1.056 2.112 5.208 7.782 9.619 11.88a1.607 1.607 0 0 0 2.19 0c4.411-4.098 8.563-9.768 9.62-11.88-.724-2.24-2.545-4.595-3.872-5.688a1.457 1.457 0 0 0-.934-.312H6.091a1.457 1.457 0 0 0-.934.312v0Z" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M1.3 9.429h21.409M6 3.429l6 6 6-6M12 9.429v12.836" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

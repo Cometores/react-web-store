@@ -1,0 +1,4 @@
+<svg role="presentation" fill="none" focusable="false" stroke-width="2" width="32" height="32" class="hidden sm:block icon icon-picto-like" viewBox="0 0 24 24">
+    <path d="M7.05 19.41H6V9.6h1.05l4.17-7.234a2.16 2.16 0 0 1 4.008 1.376l-.4 2.875h3.412c1.491 0 4.476 1.492 4.476 4.474 0 2.983-3 9.81-6.173 9.81-4.178 0-7.75-.995-9.49-1.492l-.002.002Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M1.286 9.214a2.357 2.357 0 1 1 4.714 0v9.857a2.357 2.357 0 1 1-4.714 0V9.214Z" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-linejoin="round" />
+</svg>

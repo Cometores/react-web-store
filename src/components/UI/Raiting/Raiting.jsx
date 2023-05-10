@@ -1,5 +1,5 @@
 import React from 'react';
-import Star from './Star.jsx';
+import { ReactComponent as Star } from '../../../img/star.svg';
 
 const Raiting = ({ num }) => {
 
@@ -7,13 +7,12 @@ const Raiting = ({ num }) => {
 		<div>
 			{
 				[...Array(num).keys()].map(i => {
-					return <Star color="black"/>
+					return <Star fill="black"/>
 				})
-				
 			}
 			{
 				[...Array(5-num).keys()].map(i => {
-					return <Star color="none"/>
+					return <Star fill="none"/>
 				})
 			}
 		</div>

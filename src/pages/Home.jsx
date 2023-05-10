@@ -5,6 +5,7 @@ import Gallery from '../components/Gallery/Gallery';
 import AdvantagesCard from '../components/AdvantagesCollection/AdvantagesCollection'
 
 import slides from '../img/Slider.json'
+import IconCollection from "../components/IconCollection/IconCollection.jsx";
 
 const Home = () => {
 
@@ -14,6 +15,7 @@ const Home = () => {
 			<Gallery />
 			<CardCollection />
 			<AdvantagesCard />
+			<IconCollection />
 		</div>
 	);
 };
